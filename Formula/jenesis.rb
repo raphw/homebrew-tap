@@ -3,9 +3,9 @@
 class Jenesis < Formula
   desc "A Java-native build tool."
   homepage "https://github.com/raphw/jenesis"
-  url "https://github.com/raphw/jenesis/releases/download/v0.10.6/jenesis-0.10.6.zip"
-  version "0.10.6"
-  sha256 "7cbaac59f764a11fb46dfb147cc7a93f07df8619441051bd1fe6716f3220fb3f"
+  url "https://github.com/raphw/jenesis/releases/download/v0.10.7/jenesis-0.10.7.zip"
+  version "0.10.7"
+  sha256 "0149cd11c24a6e4aed57610092459fe34c6c78504b689390cdc258308d56bf3f"
   license "Apache-2.0"
 
   depends_on "openjdk@25"
@@ -17,6 +17,6 @@ class Jenesis < Formula
 
   test do
     output = shell_output("#{bin}/jenesis --version")
-    assert_match "0.10.6", output
+    assert_match "0.10.7", output
   end
 end
